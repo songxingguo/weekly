@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="John Doe" />
+  <meta name="description" content="" />
+  
+  
+  <title>
+    
+      Hexo
+    
+  </title>
+
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
+  
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,400italic,600|Roboto+Mono" rel="stylesheet">
+
+  <!-- hexo site css -->
+  
+<link rel="stylesheet" href="/weekly/css/base.css">
+<link rel="stylesheet" href="/weekly/css/common.css">
+<link rel="stylesheet" href="/weekly/iconfont/iconfont.css">
+
+
+  
+
+  
+    
+<link rel="stylesheet" href="/weekly/css/post.css">
+
+  
+
+  <!-- jquery3.3.1 -->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- fancybox -->
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  
+<script src="/weekly/js/fancybox.js"></script>
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <a href="/">LEEDOM</a>
+</div>
+
+
+      <p class="links">
+  
+    <a title="archives" target="" href="/archives/">
+      <i class="iconfont icon-bookmark"></i>
+    </a>
+  
+    <a title="github" target="_blank" href="https://github.com/leedom92/hexo-theme-leedom">
+      <i class="iconfont icon-github"></i>
+    </a>
+  
+    <a title="email" target="" href="">
+      <i class="iconfont icon-envelope"></i>
+    </a>
+  
+    <a title="facebook" target="" href="">
+      <i class="iconfont icon-facebooksquare"></i>
+    </a>
+  
+    <a title="twitter" target="" href="">
+      <i class="iconfont icon-twitter"></i>
+    </a>
+  
+    <a title="wechat" target="" href="">
+      <i class="iconfont icon-wechat"></i>
+    </a>
+  
+    <a title="weibo" target="" href="">
+      <i class="iconfont icon-weibo"></i>
+    </a>
+  
+    <a title="rss" target="_blank" href="/atom.xml">
+      <i class="iconfont icon-rss"></i>
+    </a>
+  
+</p>
+
+
+      <div class="main">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+</script>
+
+<div class="post">
+  <h3 class="date">
+    Jan 15, 2023
+  </h3>
+  <h1>
+    
+  </h1>
+  <div class="content markdown-body">
+    <h1 id="科技爱好者周刊（第-204-期）：如何度过疫情、裁员、还有战争"><a href="#科技爱好者周刊（第-204-期）：如何度过疫情、裁员、还有战争" class="headerlink" title="科技爱好者周刊（第 204 期）：如何度过疫情、裁员、还有战争"></a>科技爱好者周刊（第 204 期）：如何度过疫情、裁员、还有战争</h1><p>这里记录每周值得分享的科技内容，周五发布。（**[通知] 下周五一假期，周刊暂停一次。**）</p>
+<p>本杂志开源（GitHub: <a target="_blank" rel="noopener" href="https://github.com/ruanyf/weekly">ruanyf&#x2F;weekly</a>），欢迎提交 issue，投稿或推荐科技内容。</p>
+<p>周刊讨论区的帖子<a target="_blank" rel="noopener" href="https://github.com/ruanyf/weekly/issues/2309">《谁在招人？》</a>，提供大量程序员就业信息，欢迎访问或发布工作&#x2F;实习岗位。</p>
+<h2 id="封面图"><a href="#封面图" class="headerlink" title="封面图"></a>封面图</h2><p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022041701.webp"></p>
+<p>一家英国公司正在推广人体芯片，图中女子使用体内芯片付款。这种芯片原用来为残疾人自动开门，后来推广到正常人。（<a target="_blank" rel="noopener" href="https://www.bbc.com/news/business-61008730">via</a>）</p>
+<h2 id="本周话题：如何度过疫情、裁员、还有战争"><a href="#本周话题：如何度过疫情、裁员、还有战争" class="headerlink" title="本周话题：如何度过疫情、裁员、还有战争"></a>本周话题：如何度过疫情、裁员、还有战争</h2><p>最近的坏消息比较多，疫情、裁员、还有战争。一打开群组和朋友圈，转发的都是这些事情，很多人的心情受到影响。今天谈谈我的想法。</p>
+<p>不少网友私信，问我在上海的近况。我都没有回复，总觉得隔离的生活没什么可说。小区封控一个月了，出不去，下楼就是做核酸和领物资。这些事情不值得细说。</p>
+<p>我认为，对待这些事情的正确态度，就是三个字：<strong>随它去</strong>，英语叫做 let it be。不要为这些事情费神上心，理由很简单，它们完全超出了你的能力，你根本影响不了，无论事情发展到哪一步，你只能接受。就算你感到痛苦和烦恼，难道会改变局面吗？</p>
+<p>我们的时间很宝贵，不要用于那些改变不了的事情，而要用于你能够改变的事情。一位美国神学家曾经写过<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%AE%81%E9%9D%99%E7%A5%B7%E6%96%87/8368408">一段著名的祈祷文</a>：“请赐予我力量，<strong>全力改变那些可以改变的事情，平静接受那些无能为力的事情，拥有智慧区分这两者。</strong>”</p>
+<p>疫情何时结束，小区何时解封，这是你无能为力的。与其烦恼这种事情，不如不去管它。人生难得有这样一段突然停下来的时间，别浪费了，多读一点书，多学一点技术，比什么都有用，等到生活恢复正常，它们能帮到你。</p>
+<p>1665年8月，剑桥大学由于鼠疫大流行而关门，学生们都回家了。有一个22岁的学生回到乡下的老家，整整18个月闭门不出，努力读书和做实验，最后提出了一整套全新理论，彻底改变了人类的科学进展。这个学生就是牛顿。</p>
+<p>疫情是一场灾难，但是如果能好好利用这段日子，它也许就会变成你的人生财富。</p>
+<p>裁员也应该如此看待，这一次有些行业（房地产、教培、互联网）的裁员，属于全行业收缩，不是员工的问题，行业的问题超出了你个人的努力。</p>
+<p>如果公司把整个部门和业务线都砍了，里面最好的员工也不可避免会受到影响。不要灰心焦虑，更不要怀疑自己，既然事情已经发生了，你所能做的就是随它去，别把时间用来长吁短叹、愤世嫉俗，而要保持学习，磨练自己的技术，等到行业回暖时，就会有回报。</p>
+<p>你要这么想，这些行业之所以会收缩，就是因为前期的市场需求旺盛，扩张太快。这说明它们的市场需求是真实存在的，只要市场需求还在，就有发展空间，你练好本领，不愁将来没有用武之地。</p>
+<p>最后，送给大家两句话，都是我看来的。如果你也因为疫情，有很多空闲时间，推荐可以找来看看。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022041902.webp"></p>
+<p>第一句出自《曾国藩家书》。曾国藩的人生并不顺利，50岁以后才出头。他给弟弟写了很多信，一再教育老弟要经受得住挫折，能够沉住气。他说，人生应该做到“四耐”：“<strong>耐冷耐苦，耐劳耐闲</strong>。”我觉得说的真好，很适合现在的疫情时期。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022041901.webp"></p>
+<p>第二句出自经典日剧《悠长假期》。这部电视剧是20年前拍的，现在看一点不过时。它讲了两个倒霉的年轻人相遇，互相激励的爱情故事。它的片名取自男主角对女主角说的一句话：“人生总有不顺的时候，不必勉强冲刺，就把它当作老天给的悠长假期，好好享受这个假期。突然一天假期结束，时来运转，人生才真正开始。“</p>
+<h2 id="计算机硕士考研训练营"><a href="#计算机硕士考研训练营" class="headerlink" title="计算机硕士考研训练营"></a>计算机硕士考研训练营</h2><p>上个月介绍的计算机考研训练营，本周又开班了。</p>
+<p>今年的就业形势严峻，计算机硕士文凭对找工作或者改换行业，确实有帮助，所以报考人数才会创新高。按照现在的状况，明年的报考人数只多不少。</p>
+<p>如果你打算考研，或者还没打定主意，想找专家咨询，可以报名参加这个训练营。明年的考研其实已经很近了，9月份就要报名，年底考试。</p>
+<p>训练营内容<strong>全部是考研必须知道的事情</strong>，比如计算机考研的流程和趋势，专业课、政治和英语如何备课。</p>
+<p>整个课程一共分成四堂直播课（含录播内容），安排如下。</p>
+<blockquote>
+<p><ins>第一天：考研规划课</ins></p>
+<p>主讲老师刘硕（清华大学毕业，新东方10余年考研辅导经验），介绍计算机硕士如何选校选专业、考试科目及分数线、就业前景等等。</p>
+<p><ins>第二天：计算机专业课</ins></p>
+<p> 主讲老师李超（哈工大计算机硕士，ACM ICPC 亚洲区银奖得主，前华为、阿里巴巴工程师），介绍专业课如何争取高分120分+，408（计算机统考编号）四门专业课复习策略。</p>
+<p><ins>第三天：政治课</ins></p>
+<p>主讲老师钟若（开课吧考研政治学科领头人，累计授课6000+小时），介绍如何摆脱死记硬背，快速掌握政治复习重点。</p>
+<p><ins>第四天：英语课</ins></p>
+<p>主讲老师郑权益（开课吧英语项目负责人，原新东方考研英语高级讲师），重点介绍如何应对英语阅读，针对英语疑难问题的复习方法。</p>
+</blockquote>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022042001.webp"></p>
+<p>除了直播课，主办单位“开课吧”还提供讲师、助教、班主任三位一体跟踪式服务，全程为你答疑解惑。训练营结束时，还有大数据 AI 系统，根据历年分数线和报考情况，帮你精准择校择专业，并量身定制备考方案。</p>
+<p>不管你是报考学术硕士，还是专业硕士，或者非全日制硕士，都可以听。考虑到有些同学并非计算机科班出身，讲课过程中也会照顾这些同学，解答跨专业零基础如何准备考研。</p>
+<p>周刊读者支付<strong>一元报名费</strong>，就可以听课，还可<ins>领取计算机考试大纲、历年真题资料、政治&#x2F;英语备考资料等超值资料包</ins>。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022042002.webp"></p>
+<p>微信扫描上方二维码，了解课程详情并报名。支付报名费后，会弹出助教老师二维码，别忘了添加老师微信，领取课程。</p>
+<h2 id="科技动态"><a href="#科技动态" class="headerlink" title="科技动态"></a>科技动态</h2><p>1、<a target="_blank" rel="noopener" href="https://www.thisiscolossal.com/2022/02/tom-scott-hill-house/">古建筑遮雨棚</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022021917.webp"></p>
+<p>苏格兰是一个多雨的地区，年平均降雨的天数超过190天。这对当地的一座百年建筑物造成伤害，水泥在雨水冲刷下变得脆弱和破碎。</p>
+<p>为了保护这座四层楼的建筑物，当地政府建了一个巨大的遮雨棚，外层是一个个钢圈，组成了一个透明的网，一共用掉了3240万个钢圈，就像一层世界最大盔甲。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022021918.webp"></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022021919.webp"></p>
+<p>这种设计的好处是可以保持自然的通风，并且不牺牲景观，游客依然可以在远处观看这座建筑物，值得借鉴。</p>
+<p>2、<a target="_blank" rel="noopener" href="https://www.abc.net.au/news/2022-02-22/magpies-show-cooperative-behaviour-by-removing-tracking-device/100851458">喜鹊追踪器</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022022308.webp"></p>
+<p>澳大利亚科学家为了研究喜鹊的行为，给它们带上了追踪器。但是，追踪器的电力有限，没过几天就没电了，怎么才能给追踪器充电呢？</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022022309.webp"></p>
+<p>科学家想出了一个聪明的解法，把追踪器设计成无线充电，然后在充电板上洒满食物。当喜鹊进食时，就会自动进行充电和下载数据。需要时，再放上强力磁铁，就会扯断追踪器的带子，释放追踪器。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022022310.webp"></p>
+<p>3、<a target="_blank" rel="noopener" href="https://iauto.ifeng.com/news/quanmeiti/20200223/1386134.shtml">飞行摩托车</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202112/bg2021121510.webp"></p>
+<p>一家法国公司生产了一款可以飞行的摩托车，简直像科幻电影一样。它的前轮和后轮，都各自包括两个轮胎，可以像摩托车一样在地面正常行驶。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202112/bg2021121511.webp"></p>
+<p>飞行时，这四个轮胎还可以升起，变成水平状的螺旋桨。配合喷气发动机，摩托车就会变成飞行器。这台摩托车的售价高达56万美元（约等于400万人民币）。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202112/bg2021121512.webp"></p>
+<p>4、<a target="_blank" rel="noopener" href="https://www.canon-europe.com/support/business-product-support/interim-toner/">硒鼓芯片</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202201/bg2022010905.webp"></p>
+<p>打印机硒鼓都带有芯片，检测墨粉是否短缺，以及硒鼓是否为正品。由于芯片的全球短缺，佳能公司现在开始发售不带有芯片的硒鼓。</p>
+<p>没了芯片，硒鼓插入打印机之后，系统就会跳出警告，表示可能不是正品。佳能公司不得不在官网上贴出教程，教用户怎么关闭防伪检测。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202201/bg2022010906.webp"></p>
+<p>5、<a target="_blank" rel="noopener" href="https://www.vestaboard.com/">Vegaboard</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202111/bg2021112522.jpg"></p>
+<p>美国加州的一家公司，发明了一种叫做 Vegaboard 的显示板。用户用手机或电脑向它发送文字消息，它收到后就会显示出来。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202111/bg2021112523.jpg"></p>
+<p>它的特别之处在于，这不是一个电子装置，而是机械装置。每个字符都是一个翻板装置，支持8种颜色。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202111/bg2021112524.jpg"></p>
+<p>该公司称，它可以挂在墙上，充当布告板。问题是，用户为什么不直接挂一个电视，而要挂这个东西呢？它的功能很有限，而且售价高达2850美元，比电视贵得多。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022042201.webp"></p>
+<h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><p>1、<a target="_blank" rel="noopener" href="https://icloudnative.io/posts/how-we-lost-54k-github-stars/">HTTPie 是如何丢失5.4万 Star</a>（中文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022042017.webp"></p>
+<p>HTTPie 是一个非常知名的开源项目，在 GitHub 有5.4万颗星。项目管理员不小心将其设为私密项目，导致所有 star 和 watch 清零，并且无法恢复。HTTPie 官方写了<a target="_blank" rel="noopener" href="https://httpie.io/blog/stardust">一篇长文</a>，回顾整件事，总结教训，本文是中文翻译。（<a target="_blank" rel="noopener" href="https://github.com/ruanyf/weekly/issues/2337">@yangchuansheng</a> 投稿）</p>
+<p>2、<a target="_blank" rel="noopener" href="https://ludoro.github.io/blog/career/2022/02/14/newgrad.html">一个欧盟应届毕业生的求职之路</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022022017.webp"></p>
+<p>这是一个欧洲人写的文章，他硕士毕业应聘软件工程师，面试了十几家互联网公司。他记录了每家公司的应聘过程，以及给出的薪水。大家可以从中了解欧洲的互联网行业状况。</p>
+<p>3、<a target="_blank" rel="noopener" href="https://css-tricks.com/explain-the-first-10-lines-of-twitter-source-code/">推特 HTML 网页的前10行代码</a>（英文） </p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022022601.webp"></p>
+<p>作者面试前端程序员时，经常打开推特的 HTML 网页源码，让应聘者解释前10行代码（上图）每一行的目的。</p>
+<p>4、<a target="_blank" rel="noopener" href="https://spectrum.ieee.org/how-usb-came-to-be">USB 接口是如何诞生的</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022022302.webp"></p>
+<p>上个世纪90年代初，Intel 公司的一个工程师想找到一种简单的办法，为电脑添加外部设备，可以即插即用，并且还能供电。本文介绍了当时的一些情况。</p>
+<p>5、<a target="_blank" rel="noopener" href="https://healeycodes.com/when-im-sad-my-computer-sends-me-a-cat">当你难过时，电脑发来一张猫的照片</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022022303.webp"></p>
+<p>本文介绍作者的一个小项目，用摄像头识别用户情绪。如果发现情绪不佳，就自动在 iPhone 上推送一张猫的照片。所有运算都在本地，不会有数据泄露的风险。</p>
+<p>6、<a target="_blank" rel="noopener" href="https://blog.polyhaven.com/how-we-handle-80tb-and-5m-page-views-a-month-for-under-400/">我们每月有 80TB 流量和 500 万页面浏览，费用不到400美元</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202201/bg2022010704.webp"></p>
+<p>作者介绍如何用每月400美元的代价，通过 Cloudflare、Backblaze、Bunny.net 等服务，支撑一个流量巨大的网站。</p>
+<p>7、<a target="_blank" rel="noopener" href="https://vuyisile.com/pypi-in-a-box-using-a-raspberry-pi-as-a-portable-pypi-server/">树莓派搭建 PyPi 服务器</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022022510.webp"></p>
+<p>作者演示了如何用树莓派搭建一个 PyPi 服务器，用来在离线时下载 Python 的各种包。如果你不知道树莓派怎么玩，可以看看这篇文章。</p>
+<p>8、<a target="_blank" rel="noopener" href="https://shkspr.mobi/blog/2022/01/should-you-use-lets-encrypt-for-internal-hostnames/">内网应该使用 Let’s Encrypt 吗？</a>（英文）</p>
+<p>Let’s Encrypt 一般用于生成免费的 HTTPS 证书，但是它有一个问题：一旦使用了，外界可以查到主机名。</p>
+<p>9、<a target="_blank" rel="noopener" href="https://blog.crunchydata.com/blog/five-tips-for-a-healthier-postgres-database-in-the-new-year">改善 Postgres 数据库健康度的五个技巧</a>（英文）</p>
+<p>Postgres 数据库的应用越来越广，这篇文章总结了五个小技巧，改善数据库的健康度。</p>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>1、<a target="_blank" rel="noopener" href="https://github.com/navidrome/navidrome/">Navidrome Music Server</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202201/bg2022010703.webp"></p>
+<p>开源的音乐流媒体服务器，提供 Web 管理界面，可以用来管理自己的音乐文件。</p>
+<p>2、<a target="_blank" rel="noopener" href="https://www.bookstackapp.com/">BookStack</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202201/bg2022010904.webp"></p>
+<p>一个类似 WordPress 的 PHP 架站软件，主要用来整理笔记和知识管理，提供目录式的页面结构。</p>
+<p>3、<a target="_blank" rel="noopener" href="https://jsonvisio.com/">JSON Visio</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202203/bg2022031914.webp"></p>
+<p>一个开源的 JSON 可视化工具，将 JSON 数据转成树状图展示。</p>
+<p>4、<a target="_blank" rel="noopener" href="https://starship.rs/">Starship</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202203/bg2022031901.webp"></p>
+<p>这个软件定制各种命令行环境的提示符（prompt），可配置性极强，能够定制几百个参数，支持 Bash、Zsh、Fish、Powershell 等各种常见命令行环境。</p>
+<p>5、<a target="_blank" rel="noopener" href="https://github.com/soheilpro/mailwind">Mailwind</a></p>
+<p>一个命令行工具，可以将使用 Tailwind CSS 的网页转成电子邮件专用的网页，省却了为电子邮件写样式的麻烦。</p>
+<p>6、<a target="_blank" rel="noopener" href="https://github.com/xcodebuild/CodeTerminal">CodeTerminal</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022042012.webp"></p>
+<p>从 VS Code 拆分出来的、独立的终端模拟器。(<a target="_blank" rel="noopener" href="https://github.com/ruanyf/weekly/issues/2333">@xcodebuild</a> 投稿)</p>
+<p>7、<a target="_blank" rel="noopener" href="https://tsrpc.cn/">TSRPC</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022042013.webp"></p>
+<p>专为 TypeScript 设计的 RPC 框架，经千万级用户验证。适用于 HTTP API、WebSocket 实时应用、NodeJS 微服务等场景。（<a target="_blank" rel="noopener" href="https://github.com/ruanyf/weekly/issues/2335">@simlePig</a> 投稿）</p>
+<p>8、<a target="_blank" rel="noopener" href="https://devtool.tech/image-share">图片美化器</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022042016.webp"></p>
+<p>一个网页小工具，可以为你的图片添加一个背景框，并添加标题。（<a target="_blank" rel="noopener" href="https://github.com/ruanyf/weekly/issues/2338">@shfshanyue</a> 投稿）</p>
+<p>9、<a target="_blank" rel="noopener" href="https://github.com/eolinker/eoapi">Eoapi</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022042014.webp"></p>
+<p>开源的 API 管理和测试 APP。（<a target="_blank" rel="noopener" href="https://github.com/ruanyf/weekly/issues/2340">@scarqin</a> 投稿）</p>
+<p>10、<a target="_blank" rel="noopener" href="https://github.com/nadavrot/layout">Layout</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202203/bg2022031910.webp"></p>
+<p>一个命令行工具，可以将 Graphviz 文件渲染生成 SVG 图片。</p>
+<h2 id="资源"><a href="#资源" class="headerlink" title="资源"></a>资源</h2><p>1、<a target="_blank" rel="noopener" href="https://svgsilh.com/">SVG Silh</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202111/bg2021113001.webp"></p>
+<p>SVG 图片库，一共有几万张。</p>
+<p>2、<a target="_blank" rel="noopener" href="https://doaj.org/">开放式学术期刊搜索引擎</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202108/bg2021082404.jpg"></p>
+<p>科学论文搜索引擎，目前共有600多万篇。</p>
+<p>3、<a target="_blank" rel="noopener" href="https://www.deviceinfo.me/">Device Info</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202109/bg2021092001.jpg"></p>
+<p>一个网页工具，显示浏览器可以收集的所有用户设备信息，比如电池、麦克风、蓝牙等。</p>
+<p>4、<a target="_blank" rel="noopener" href="https://pages.cs.wisc.edu/~remzi/OSTEP/">操作系统导论</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022022703.webp"></p>
+<p>《操作系统导论》（Operating Systems: Three Easy Pieces）是免费的操作系统入门教程，评价很高的一本书。</p>
+<p>5、<a target="_blank" rel="noopener" href="https://dotown.maeda-design-room.net/">像素图片</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202203/bg2022030113.webp"></p>
+<p>任天堂前艺术总监前田隆史，做了一个网站，提供大量像素图片，有分类和搜索，可以免费下载使用。</p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>1、<a target="_blank" rel="noopener" href="https://www.thediff.co/p/facial-recognition-as-a-pareto-technology">副词的概率</a></p>
+<p>2018年，两个美国数据学家想知道，人们使用副词表示程度时，比如 always（总是）、likely（很可能）、经常（often），心里对应的概率是多少。</p>
+<p>他们就做了一个问卷调查，让人们填写每个词的概率，得到了下面的结果。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202201/bg2022011205.webp"></p>
+<p>根据上图，不同的人对于同一个副词，理解的概率相差非常大。比如，听到 Probably（很可能）这个词时，有的人认为发生概率是50%，有的人认为高于80%。</p>
+<p>所以，想要精确表达时，应该尽量减少使用这些副词。</p>
+<p>2、<a target="_blank" rel="noopener" href="https://www.odditycentral.com/art/russian-street-artist-creates-hyperrealistic-murals.html">大楼外墙壁画</a></p>
+<p>一位俄罗斯艺术家擅长在大楼外墙，绘制超现实主义的错觉壁画。</p>
+<p>这是作画之前的大楼。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202201/bg2022011313.webp"></p>
+<p>这是作画之后的大楼。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202201/bg2022011314.webp"></p>
+<p>其中只有一台空调是真的，如果不说，你能辨认出来吗。</p>
+<h2 id="文摘"><a href="#文摘" class="headerlink" title="文摘"></a>文摘</h2><p>1、<a target="_blank" rel="noopener" href="https://www.nationalgeographic.com/science/article/scientists-breed-smarter-fish-but-reveal-the-costs-of-big-brains">高智商的代价</a></p>
+<p>瑞典生物学家科特沙尔（Alexander Kotrschal）曾经做过一个实验，了解脑袋的大小差异对动物的智力是否有影响。</p>
+<p>他的实验对象是一种叫做孔雀鱼的小鱼，挑选出了大脑异常大和大脑异常小的个体，作为对照组。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202201/bg2022010212.webp"></p>
+<p>平均来说，两组孔雀鱼的脑袋大小的差异大约是9%。分组之后，生物学家开始训练它们区分符号。</p>
+<p>事实证明，大头孔雀鱼的智力胜过小头孔雀鱼，也就是说，脑袋的体积确实对动物的智力有影响。</p>
+<p><strong>但是，高智商是有代价的。</strong> 大头鱼的内脏更小，后代更少。大脑是昂贵的耗能器官，例如，人类大脑的重量仅占体重的2%，但消耗了20%的能量。许多科学家认为，为了拥有更大的大脑，必须缩小身体的其他部位，而这正是科特沙尔在孔雀鱼身上发现的。</p>
+<p>更重要的是，大头孔雀鱼比小头孔雀鱼少生育19%的后代。因此可以说，聪明的代价是你可能会放弃繁殖，因为繁殖也是一项耗能巨大的活动。</p>
+<p>这符合在其他动物身上看到的模式。哺乳动物中，最聪明的灵长类动物和鲸类动物（鲸鱼和海豚），生育率也异常低。尤其是人类，在灵长类动物中拥有最大的大脑和最少的后代。</p>
+<p>“我们的研究结果表明，<strong>后代数量的减少可能是灵长类动物，尤其是原始人类进化出更大大脑的主要成本</strong>，”科特沙尔说。</p>
+<p>高智商动物的大脑变得如此之大，消耗很多能量，而且繁殖如此缓慢，这会导致它们的灭绝吗？如果一个物种能够生存下去，更大的大脑提供的优势（比如高智商），必须超过后代减少的程度。</p>
+<h2 id="言论"><a href="#言论" class="headerlink" title="言论"></a>言论</h2><p>1、</p>
+<p>你的工作将占据人生的很大一部分，因此真正让自己满意人生只有一种方法，那就是做你觉得值得的工作。</p>
+<p>– <a target="_blank" rel="noopener" href="https://www.brainyquote.com/quotes/steve_jobs_416859">乔布斯</a></p>
+<p>2、</p>
+<p>如果麦当劳像当代的软件公司那样，那么出现 Bug 时（比如汉堡包变质），麦当劳的回应将是：“非常抱歉，作为补偿，我们为您提供两张优惠券。”</p>
+<p>—— <a target="_blank" rel="noopener" href="https://bitfieldconsulting.com/golang/career">马克·米纳西</a></p>
+<p>3、</p>
+<p>冲浪的想法很有意思。你用一块小板子挑战大自然，说“我要骑在你的上面！” 大自然有时候不在意，让你骑一会。但是更多的时候，大自然说“不行，不是这样的！”，把你打翻在浪花底下。</p>
+<p>– <a target="_blank" rel="noopener" href="https://bitfieldconsulting.com/golang/career">《你的职业生涯》</a></p>
+<p>4、</p>
+<p>互联网时代，商业成功的关键不是掌握供给，而是掌握需求。</p>
+<p>你必须与客户建立直接关系，如果有人插在中间，你的客户获取成本就会不断上升，导致利润下降。一个例子就是，谷歌每年向苹果支付约90亿美元，只为了让谷歌成为 iOS 的默认搜索引擎。</p>
+<p>– <a target="_blank" rel="noopener" href="https://florentcrivello.com/index.php/2018/10/22/own-the-demand/">《掌握需求》</a></p>
+<p>5、</p>
+<p>如果有一天，所有的说明文档和设计图纸都消失了，我们仍然会拥有先进的工业文明，因为训练有素的工程师是技术的源泉。但是，如果工程师消失了，再多的文档和图纸都救不了我们，这就像古人拿到图纸也无法制造出汽车。</p>
+<p>所以，我们不应将知识产权和工具视为技术进步的最终目的，而应着力于培养更好的科学家、工程师和技术人员。</p>
+<p>– <a target="_blank" rel="noopener" href="https://future.a16z.com/the-silicon-in-silicon-valley-again/">《将硅再次带回硅谷》</a></p>
+<h2 id="历史上的本周"><a href="#历史上的本周" class="headerlink" title="历史上的本周"></a>历史上的本周</h2><p>2021年（第 153 期）：<a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2021/04/weekly-issue-153.html">机器翻译是对译者的侮辱吗？</a></p>
+<p>2020年（第 101 期）：<a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2020/04/weekly-issue-101.html">互联网不再稀缺</a></p>
+<p>2019年（第 50 期）：<a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2019/04/weekly-issue-50.html">“时间换收入”是一个陷阱</a></p>
+<h2 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h2><p>这个周刊每周五发布，同步更新在<a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog">阮一峰的网络日志</a>和<a target="_blank" rel="noopener" href="http://weixin.sogou.com/weixin?query=%E9%98%AE%E4%B8%80%E5%B3%B0%E7%9A%84%E7%BD%91%E7%BB%9C%E6%97%A5%E5%BF%97">微信公众号</a>。</p>
+<p>微信搜索“阮一峰的网络日志”或者扫描二维码，即可订阅。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202103/bg2021030402.jpg"></p>
+<p>（完）</p>
+
+  </div>
+  
+    
+      <a id="older" class="blog-nav" href="/weekly/2023/01/15/issue-205/">OLDER&nbsp;&gt;</a>
+      
+        
+          <a id="newer" class="blog-nav" href="/weekly/2023/01/15/issue-203/">&lt;&nbsp;NEWER</a>
+          
+            
+</div>
+        <div class="footer">
+  
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/leedom92/hexo-theme-leedom">Copyright © Leedom 2021</a>
+        
+    </div>
+  
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/leedom92/hexo-theme-leedom">Theme by Leedom | Powered by Hexo</a>
+        
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="back-to-top hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/weekly/js/backtotop.js"></script>
+
+
+
+      
+  <div class="search-icon" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-box">
+        <div class="search-title">
+          <!-- <span class="search-icon-input">
+            <a href="javascript: void(0)">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </span> -->
+          
+            <input type="text" class="search-input" id="search-input" placeholder="搜索">
+          
+          <span class="search-close-icon" id="search-close-icon">
+            <a href="javascript: void(0)">
+              <i class="iconfont icon-close"></i>
+            </a>
+          </span>
+        </div>
+        <div class="search-result" id="search-result"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    // inputArea.onclick = function() {
+    //   getSearchFile()
+    //   this.onclick = null
+    // }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        inputArea.focus()
+        getSearchFile()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'><span></ul>";
+      // $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'><h2>" + orig_data_title + "</h2></a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<h3 class=\"search-result-abstract\">" + match_content + "...</h3>"
+                }
+                str += "<hr></li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The search.xml file was not found, please refer to：<a href='https://github.com/leedom92/hexo-theme-leedom#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The request failed, Try to refresh the page or try again later.<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "./search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+    </div>
+  </body>
+</html>

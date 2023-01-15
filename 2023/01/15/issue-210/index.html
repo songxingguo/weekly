@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="John Doe" />
+  <meta name="description" content="" />
+  
+  
+  <title>
+    
+      Hexo
+    
+  </title>
+
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
+  
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto:400,400italic,600|Roboto+Mono" rel="stylesheet">
+
+  <!-- hexo site css -->
+  
+<link rel="stylesheet" href="/weekly/css/base.css">
+<link rel="stylesheet" href="/weekly/css/common.css">
+<link rel="stylesheet" href="/weekly/iconfont/iconfont.css">
+
+
+  
+
+  
+    
+<link rel="stylesheet" href="/weekly/css/post.css">
+
+  
+
+  <!-- jquery3.3.1 -->
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- fancybox -->
+  <link href="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.css" rel="stylesheet">
+  <script async src="https://cdn.bootcss.com/fancybox/3.5.2/jquery.fancybox.min.js"></script>
+  
+<script src="/weekly/js/fancybox.js"></script>
+
+
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <a href="/">LEEDOM</a>
+</div>
+
+
+      <p class="links">
+  
+    <a title="archives" target="" href="/archives/">
+      <i class="iconfont icon-bookmark"></i>
+    </a>
+  
+    <a title="github" target="_blank" href="https://github.com/leedom92/hexo-theme-leedom">
+      <i class="iconfont icon-github"></i>
+    </a>
+  
+    <a title="email" target="" href="">
+      <i class="iconfont icon-envelope"></i>
+    </a>
+  
+    <a title="facebook" target="" href="">
+      <i class="iconfont icon-facebooksquare"></i>
+    </a>
+  
+    <a title="twitter" target="" href="">
+      <i class="iconfont icon-twitter"></i>
+    </a>
+  
+    <a title="wechat" target="" href="">
+      <i class="iconfont icon-wechat"></i>
+    </a>
+  
+    <a title="weibo" target="" href="">
+      <i class="iconfont icon-weibo"></i>
+    </a>
+  
+    <a title="rss" target="_blank" href="/atom.xml">
+      <i class="iconfont icon-rss"></i>
+    </a>
+  
+</p>
+
+
+      <div class="main">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+<!-- LaTex Display -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script type="text/javascript" id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+</script>
+<script>
+  MathJax = {
+    tex: {
+      inlineMath: [['$', '$'], ['\\(', '\\)']]
+    }
+  };
+</script>
+
+<div class="post">
+  <h3 class="date">
+    Jan 15, 2023
+  </h3>
+  <h1>
+    
+  </h1>
+  <div class="content markdown-body">
+    <h1 id="科技爱好者周刊（第-210-期）：为什么软件变得复杂"><a href="#科技爱好者周刊（第-210-期）：为什么软件变得复杂" class="headerlink" title="科技爱好者周刊（第 210 期）：为什么软件变得复杂"></a>科技爱好者周刊（第 210 期）：为什么软件变得复杂</h1><p>这里记录每周值得分享的科技内容，周五发布。</p>
+<p>本杂志开源（GitHub: <a target="_blank" rel="noopener" href="https://github.com/ruanyf/weekly">ruanyf&#x2F;weekly</a>），欢迎提交 issue，投稿或推荐科技内容。</p>
+<p>周刊讨论区的帖子<a target="_blank" rel="noopener" href="https://github.com/ruanyf/weekly/issues/2426">《谁在招人？》</a>，提供大量程序员就业信息，欢迎访问或发布工作&#x2F;实习岗位。</p>
+<h2 id="封面图"><a href="#封面图" class="headerlink" title="封面图"></a>封面图</h2><p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022061615.webp"></p>
+<p>中国科学家绘制的世界首幅、最详细的1:250万月球全月地质图发布，统计出月球包含12341个撞击坑、17种岩石、14类地质构造。（<a target="_blank" rel="noopener" href="http://www.cnsa.gov.cn/n6758823/n6758838/c6840495/content.html">via</a>）</p>
+<h2 id="本周话题：为什么软件变得复杂"><a href="#本周话题：为什么软件变得复杂" class="headerlink" title="本周话题：为什么软件变得复杂"></a>本周话题：为什么软件变得复杂</h2><p>我一直认为，软件开发的最大关注点，就是避免复杂性。软件设计越简单越好，太多的程序员以构建复杂的解决方案为荣。</p>
+<p>但是，本周有一篇文章让我反思，我的想法是不现实的：<strong>软件肯定会越变越复杂。</strong></p>
+<p>（一）</p>
+<p>这篇文章的作者是 Saleforce 公司的前端工程师诺拉·劳森（Nolan Lawson），题目就叫做<a target="_blank" rel="noopener" href="https://nolanlawson.com/2022/06/09/the-collapse-of-complex-software/">《复杂软件的崩溃》</a>（下图）。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022061407.webp"></p>
+<p>大家可能知道，Salesforce 是一家世界级软件公司，专门开发企业软件，以产品复杂而闻名。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022061406.webp"></p>
+<p>所以，这件事情很讽刺。一家出产复杂软件的公司，自家的著名程序员公开说，复杂软件会崩溃。</p>
+<p>当然，他在文章里面没提 Salesforce 的名字，但是怎么读都像在写亲身经历。下面摘录一段他的原文和配图，大家品味一下。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022061408.webp"></p>
+<blockquote>
+<p>“任何在科技行业工作足够长的人，尤其是在大公司工作的人，都曾见过下面的场景。</p>
+<p>有一个遗留系统，很大很复杂，没有人完全理解它是如何工作的。</p>
+<p>架构师被要求“修复”系统，他们找来一块大的白板，把这个大系统分解成很多方框和箭头。对于遇到的问题，他们的解决方案就是……添加更多方框和箭头。没有任何一个可以从系统中消去，每个人都只是加上自己的那部分。</p>
+</blockquote>
+<p>这一段是不是写得很形象，就像是日常场景的描述。</p>
+<p>根据他的文章，我整理了一下，Saleforce 内部的情况大概是这样的。</p>
+<blockquote>
+<ol>
+<li>客户的需求非常复杂。为了满足这些需求，大型软件不可避免变得复杂。</li>
+<li>软件公司的管理者真正在意的不是系统的复杂性，而是利润。只要软件能赚钱，高层并不在意软件变得复杂。</li>
+<li>软件复杂性都落到少数架构师和高级程序员的头上。每个人加上自己的解决方案（方框和箭头），让软件越来越复杂，然后不可避免地，他们就会在一段时间后离开公司。</li>
+<li>复杂系统最终变得难以理解和维护，唯一的解决方法就是放弃旧系统，从头开始写一个新系统。</li>
+</ol>
+</blockquote>
+<p>所以，诺拉·劳森的结论很悲观：<strong>怎么解决软件的复杂性？解决不了。最后就是你走人，公司把软件推倒重来。</strong></p>
+<p>这就是一个大厂高级程序员的真实想法。国内的情况其实差不多，上面的描述完全适用于 BAT 内部的复杂系统。</p>
+<p>（二）</p>
+<p>诺拉·劳森还说了一个观点。大家通常认为，复杂系统往往会在经济繁荣的时候崩溃，因为业务太多，支撑不过来，但他认为不是这样的，<strong>系统崩溃往往发生在经济收缩期。</strong></p>
+<p>经济繁荣时期，软件公司会大量雇佣新员工，投入更多的财力和人力，支撑复杂系统。等到经济收缩期，公司开始减少投入、冻结招聘或裁员，复杂系统可能就会在这个时候出问题，变得难以维护。</p>
+<p>现在就是经济收缩期，那么接下来，会不会就是软件故障的高发期，我们将看到很多复杂系统的崩溃？</p>
+<h2 id="前端高频面试题（2022版）"><a href="#前端高频面试题（2022版）" class="headerlink" title="前端高频面试题（2022版）"></a>前端高频面试题（2022版）</h2><p>这两年，客观地说，前端开发的热度有所下降。主要原因是前端技术逐步稳定，以及智能手机的普及度见顶了。</p>
+<p>但是，前端依然是 IT 行业中最活跃的分支。一年一度的 <a target="_blank" rel="noopener" href="https://octoverse.github.com/">GitHub 调查</a>中，JavaScript 多年来一直稳居第一，TypeScript 更是快速上升到今年的第四位，仅次于 Python 和 Java。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022061616.webp"></p>
+<p>技术稳定带来的一个后果，就是新框架、新工具少了，大家更关注已有框架&#x2F;工具的改进和功能增加。</p>
+<p>大厂的前端团队也转向了精细化探索，注重如何做得更细、更好，垂直化的技术领域（比如可视化、工程化等）得到了更多的关注。企业的用人要求也越来越高，从能够上手工作就可以要人，变成了要求深入某个领域。</p>
+<p>总的来说，<ins>现在的前端开发处在下图右侧的那个椭圆，比前一个阶段的难度上升了</ins>。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022061617.webp"></p>
+<p>如果你已经有一定的前端开发基础，近期打算应聘前端岗位，这里有一份有用的资料，可以帮助大家准备面试。</p>
+<p>这份资料就是 <strong>《前端大厂的高频面试题（2022版）》</strong>，一共有174页，收集了最新的面试题，由国内著名的程序员培训平台“极客时间”联系国内大厂制作。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022061620.webp"></p>
+<p>所有的题目都分门别类，由浅入深排列，每道题都附有答案详解，方便大家知识梳理、准备面试。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022061618.webp"></p>
+<p>此外，还会额外赠送 <strong>《三位资深程序员的面试跳槽经验分享》</strong>，分享技术之外的跳槽准备、简历准备、面试应对……这些值得借鉴的前人经验。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022061619.webp"></p>
+<p>微信扫描上方二维码，就可以 <strong>免费领取</strong> 这份前端面试资料。添加客服后，请耐心等待，后台是手动通过的。</p>
+<p>最后提醒一下，<ins>这份资料不适合刚刚学习前端的学生，更适合有前端开发基础和编程经验的从业人员。</ins></p>
+<h2 id="科技动态"><a href="#科技动态" class="headerlink" title="科技动态"></a>科技动态</h2><p>1、<a target="_blank" rel="noopener" href="https://gizmodo.com/vr-researches-simulate-kisses-with-ultrasonic-transduce-1848849489">虚拟接吻</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022043003.webp"></p>
+<p>卡内基梅隆大学开发了一种新技术，让 VR 头盔的佩戴者可以感受到虚拟接吻。具体做法是，头盔向嘴唇发射超声波，里面包含了一些微小颗粒，让嘴唇、牙齿甚至舌头产生触感。</p>
+<p>上图可以看到，VR 头盔的下方安装了一排超声波发生器，对准红点的位置发射。科学家开玩笑，可以用它开发“接吻机”。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022043004.webp"></p>
+<p>除了产生嘴唇的触感，这种技术还可以在游戏中，让用户感受到风拂过脸部、蜘蛛网碰到脸，甚至食物和饮料进入嘴里的虚拟感受。</p>
+<p>上图是一只巨大的虚拟蜘蛛将大量毒药倾泻到用户身上，用户可以感觉到毒药溅到嘴唇上。</p>
+<p>2、<a target="_blank" rel="noopener" href="http://www.lanxiongsports.com/posts/view/id/22687.html">LED 篮球场</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022060807.webp"></p>
+<p>5月30日，国际篮联正式宣布，允许篮球世界杯等大赛启用 LED 篮球场。</p>
+<p>传统的篮球场都是木地板，木头具有弹性，可以吸收震动，保护球员。现在，最新的 LED 玻璃也已经能够提供足够的弹性。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022060808.webp"></p>
+<p>LED 球场有很多好处，省去了划线的麻烦，能够快速切换成篮球场、手球场、排球场、羽毛球场。</p>
+<p>并且，它自身能发光，可以作为显示屏，实时显示比赛数据，并且配合球场活动，营造气氛。在黑暗中，界线依然保持醒目。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022060809.webp"></p>
+<p>3、<a target="_blank" rel="noopener" href="https://bjoernkarmann.dk/occlusion-grotesque">树皮字体</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202205/bg2022050302.webp"></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202205/bg2022050306.webp"></p>
+<p>五年前，一个丹麦艺术家将字体刻在一棵树上，想看看随着树木的成长，字体会变成什么样，也就是大自然会怎样呈现字体。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202205/bg2022050307.webp"></p>
+<p>下面是字母 a 和 o 在五年中的变化。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202205/bg2022050303.webp"></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202205/bg2022050304.webp"></p>
+<p>这些字体应用到印刷品，就是下面的样子。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202205/bg2022050305.webp"></p>
+<p>他发现，这些字母主要是横向成长，变得更宽更粗，高度反而变化不大。这说明，树木成形后，树干高度就基本不再变化了，开始不断长粗。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202205/bg2022050308.webp"></p>
+<p>4、<a target="_blank" rel="noopener" href="https://www.cnbc.com/2022/04/26/biden-blocks-sales-of-inefficient-lightbulbs-reversing-trump-policy-.html">禁止白炽灯泡</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202205/bg2022050502.webp"></p>
+<p>拜登政府宣布，美国将禁止销售每瓦产生低于45流明的灯泡。这实际上禁掉了白炽灯泡。</p>
+<p>这个决定是为了提高照明的能量效率。一般来说，白炽灯泡每瓦的发光量在10流明左右，LED 灯泡则可以达到每瓦100流明以上。</p>
+<h2 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h2><p>1、<a target="_blank" rel="noopener" href="https://www.chuapp.com/?a=index&c=Article&id=288712">我为什么与中国游戏发行商签约又分手</a>（中文）</p>
+<p>这是一篇日本独立游戏开发者的文章，被译成了中文。作者以亲身经历，解释了目前的独立游戏的发行制度和现状。</p>
+<p>2、<a target="_blank" rel="noopener" href="https://finance.sina.com.cn/tech/2022-06-14/doc-imizirau8363822.shtml">Intel 4 工艺宣布</a>（中文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022061609.webp"></p>
+<p>上周，英特尔公司正式宣布了 Intel 4 工艺。这是英特尔公司第一次将 EUV 技术用于 CPU 的生产，实现了7纳米的制程，开始追赶台积电。本文介绍该工艺的一些情况。</p>
+<p>3、<a target="_blank" rel="noopener" href="https://icloudnative.io/posts/budget-nas/">我如何搭建家用 NAS</a>（中文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022060906.webp"></p>
+<p>本文详细记录了作者选购硬件、安装软件，搭建一台 22TB 的家用 NAS （网络存储）服务器的过程，可以当作自己架设 NAS 的参考。这里是中文翻译，另有<a target="_blank" rel="noopener" href="https://mtlynch.io/budget-nas/">英文原文</a>。（<a target="_blank" rel="noopener" href="https://github.com/ruanyf/weekly/issues/2444">@yangchuansheng</a> 投稿）</p>
+<p>4、<a target="_blank" rel="noopener" href="https://ugmonk.com/blogs/journal/analog-the-simplest-productivity-system">最简单的任务管理系统</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022021201.webp"></p>
+<p>本文介绍作者自己发明的最简单任务管理系统，就是把每天的任务写在卡片上，用一个架子放在眼前，做完一件就划掉一件。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022021202.webp"></p>
+<p>5、<a target="_blank" rel="noopener" href="https://www.backblaze.com/blog/free-image-hosting-with-cloudflare-transform-rules-and-backblaze-b2/">使用 Cloudflare + Backblaze B2 打造一个免费的图像 CDN</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022021604.webp"></p>
+<p>本文是一篇详细的教程，教你怎么把图片托管在 Backblaze B2 对象存储，然后连接到 Cloudflare 的 CDN 服务。两者都有免费额度，对于小网站来说，不用花钱就解决了图片的存储和带宽问题。</p>
+<p>6、<a target="_blank" rel="noopener" href="https://nick.comer.io/post/ios-shortcuts">如何用 iOS 快捷指令防止沉迷？</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202201/bg2022010401.webp"></p>
+<p>作者发现自己在社交媒体上，浪费了大量时间。他想出了一个办法，制作了一个 iOS 快捷指令（shortcuts），只要一打开社交 App，就会跳出提示“请专心工作”。</p>
+<p>7、<a target="_blank" rel="noopener" href="https://blog.fidelramos.net/photography/photography-workflow#5-replication-with-syncthing">我的免费摄影软件工作流</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022040609.webp"></p>
+<p>作者是一个专业的摄影师，完全采用免费软件处理数码照片。本文介绍他的解决方案。</p>
+<p>8、<a target="_blank" rel="noopener" href="https://cprimozic.net/blog/my-selfhosted-websites-architecture/#backup--disaster-recovery">我在单个服务器上托管几十个网站</a>（英文）</p>
+<p>作者详细介绍，他如何在一个服务器上托管几十个网站，大部分是 API 调用。这里最大的难题还不是把服务架起来，而是如何同时维护和管理它们。</p>
+<p>9、<a target="_blank" rel="noopener" href="https://tomtunguz.com/how-much-money-flowing-into-crypto/">如何估算流入加密货币的资金</a>（英文）</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022020302.webp"></p>
+<p>多少资金流入了加密货币市场？这显然是无法准确计算的，作者想到了一个办法，可以间接估算。那就是看稳定币每月增长的发行量，上图是过去两年稳定币每个月的增长百分比。</p>
+<h2 id="工具"><a href="#工具" class="headerlink" title="工具"></a>工具</h2><p>1、<a target="_blank" rel="noopener" href="https://cloudmp3.cc/en/">CloudMP3.cc</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022041702.webp"></p>
+<p>一个云服务，可以将 SoundCloud 上面的音频，转成 mp3 下载。</p>
+<p>2、<a target="_blank" rel="noopener" href="https://github.com/ToolJet/ToolJet">ToolJet</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202203/bg2022031912.webp"></p>
+<p>一个低代码框架，用来开发内部工具。部署到服务器后，它有一个 Web 界面，通过拖拽，就可以连接各种数据源，生成各种应用或管理面板。</p>
+<p>3、<a target="_blank" rel="noopener" href="https://secreter.github.io/ireader/index.html">i 微信读书</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022061503.webp"></p>
+<p>Chrome 浏览器插件，配合网页版微信读书使用，支持划线摘抄句子、划线生成分享图片、一键导出笔记等功能。（<a target="_blank" rel="noopener" href="https://github.com/ruanyf/weekly/issues/2439">@secreter</a> 投稿）</p>
+<p>4、<a target="_blank" rel="noopener" href="https://github.com/sogou/workflow">Sogou C++ Workflow</a></p>
+<p>搜狗公司开源的 C++ 服务器引擎，支撑搜狗几乎所有后端 C++ 在线服务，提供了大量异步服务的功能。（<a target="_blank" rel="noopener" href="https://github.com/ruanyf/weekly/issues/2446">@Barenboim</a> 投稿）</p>
+<p>5、<a target="_blank" rel="noopener" href="https://doc.fastgit.org/zh-cn/guide.html">FastGit</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022061504.webp"></p>
+<p>GitHub 有时在国内不容易打开，这里有一个服务是 GitHub 的镜像加速器。提醒一下，如果要登陆 GitHub，使用这种服务会有安全顾虑，大家自己权衡。（<a target="_blank" rel="noopener" href="https://github.com/ruanyf/weekly/issues/2448">@dllen</a> 投稿）</p>
+<p>6、<a target="_blank" rel="noopener" href="http://ldapdoc.eryajf.net/">Go-Ldap-Admin</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022061505.webp"></p>
+<p>一个国产软件，基于 Go+Vue 实现的 openLDAP 管理后台，可以作为打通 IM（钉钉、企业微信、飞书）与支持 ldap 认证的应用的桥梁。（<a target="_blank" rel="noopener" href="https://github.com/ruanyf/weekly/issues/2450">@eryajf</a> 投稿）</p>
+<p>7、<a target="_blank" rel="noopener" href="https://japa.dev/">Japa</a></p>
+<p>一个 Node.js 的测试框架，简单快速，功能也很多，而且可以直接运行测试脚本，不必通过测试框架来运行。</p>
+<p>8、<a target="_blank" rel="noopener" href="https://github.com/xataio/screenshot">@xata.io&#x2F;screenshot</a></p>
+<p>这个网页脚本可以生成当前页面的截图。</p>
+<p>9、<a target="_blank" rel="noopener" href="https://www.gitkraken.com/gitlens/features">GitLens</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202203/bg2022031915.webp"></p>
+<p>一个 VSCode 的插件，大大增强了 Git 集成，可以在编辑器里面执行很多 Git 操作，特别适合多人合作的项目。</p>
+<h2 id="Deno-框架"><a href="#Deno-框架" class="headerlink" title="Deno 框架"></a>Deno 框架</h2><p>Deno 是 JavaScript 语言的服务器运行环境，跟 Node.js 是竞争关系。</p>
+<p>Deno 本身的开发已经接近稳定了，下一步只要有一个好用的框架，就能推广了。</p>
+<p>1、<a target="_blank" rel="noopener" href="https://fresh.deno.dev/">Fresh 框架</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022061401.webp"></p>
+<p>上周，基于 Deno 的 Fresh 框架发布了预览。</p>
+<p>该框架直接使用 TypeScript 脚本，号称零配置、零构建，页面由服务端渲染，客户端不需要 JS 生成内容，也没有多余的 JS 脚本，追求小而快，值得关注。</p>
+<p>2、<a target="_blank" rel="noopener" href="https://alephjs.org/">Aleph.js</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022061402.webp"></p>
+<p>Aleph.js 是另一个基于 Deno 的全栈框架，类似于 Next.js，目前处于早期开发阶段，也可以关注。</p>
+<p>3、<a target="_blank" rel="noopener" href="https://expressjs.com/">Express</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202206/bg2022061403.webp"></p>
+<p>顺便提一下，老牌的 Node.js 框架 Express，最近要发布5.0版了。这是一件大事，因为4.0版是八年前发布的。这篇文章介绍了<a target="_blank" rel="noopener" href="https://fusebit.io/blog/new-express-5-features/">5.0版的新特性</a>。</p>
+<h2 id="可视化作品"><a href="#可视化作品" class="headerlink" title="可视化作品"></a>可视化作品</h2><p>1、<a target="_blank" rel="noopener" href="http://he.net/3d-map/">全球海底光缆</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022041001.webp"></p>
+<p>这个网页提供了一个互动式的地球，上面有全世界海底光缆和骨干机房的位置。</p>
+<p>2、<a target="_blank" rel="noopener" href="https://www.drawaurora.com/">极光</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022041002.webp"></p>
+<p>这个网页构造了一个极地的背景，让你手绘动态的极光效果。</p>
+<p>3、<a target="_blank" rel="noopener" href="https://persepolis.getty.edu/">波斯波利斯</a></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/220204/bg2022041004.webp"></p>
+<p>波斯波利斯是古代波斯帝国的首都，位于现在的伊朗，已经是一片废墟了。这个页面还原了这座雄伟的帝国都城，重建了 3D 街景，让你在其中漫游。</p>
+<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p>1、<a target="_blank" rel="noopener" href="https://zh.wikipedia.org/wiki/%E9%B9%B9%E6%B5%B7">咸海</a></p>
+<p>哈萨克斯坦曾经有一个巨大的湖泊，叫做咸海，面积68000平方公里，相当于两个海南岛，是世界第四大湖泊。</p>
+<p>但是，从1960年代开始，前苏联建造了很多灌溉工程，从咸海大量引水，又没有补充，导致咸海快速干涸，目前已经接近消失了。</p>
+<p>1985年的咸海。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022022001.webp"></p>
+<p>1997年的咸海。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022022002.webp"></p>
+<p>2014年的咸海。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022022003.webp"></p>
+<p>2、<a target="_blank" rel="noopener" href="https://www.houseporn.ca/landscape/article/the_wall_housing_structure_in_fermont_quebec">住宅墙</a></p>
+<p>加拿大有一个小镇，靠近北极，终年刮着强劲的北风。</p>
+<p>为了挡风，当地修建了高50米，长1.3公里的挡风墙，同时这堵墙里面还是住宅、商业和教育设置，里面可以住人。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022022006.webp"></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022022007.webp"></p>
+<p>因为有了这堵住宅墙，小镇居民就拥有了一个无风的、温暖的小气候。 </p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022022008.webp"></p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022022009.webp"></p>
+<h2 id="文摘"><a href="#文摘" class="headerlink" title="文摘"></a>文摘</h2><p>1、<a target="_blank" rel="noopener" href="https://www.ifanr.com/app/1448161">如何增加牙膏的销量</a></p>
+<p>1950年代，一家国外的牙膏公司，向公众征求能够大幅提高销售额的点子。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202202/bg2022020805.webp"></p>
+<p>几天之后，有一个人来应征，声称他有办法让销售额快速增长40%，而且实施起来不需要很大成本。他要价10万美元。</p>
+<p>公司管理层犹豫了数周，最后还是同意了给钱。</p>
+<p>等到法律手续和付款流程完成后，这个人给出装有一张小纸条的信封，小纸条上只有四个英文单词：</p>
+<blockquote>
+<p>“Make The Hole Bigger”</p>
+</blockquote>
+<p>这句话翻译成中文，就是“让牙膏开口更大一点”。</p>
+<p>此前，管状牙膏的开口一般是5毫米直径。稍加计算就可以知道，当直径从5毫米增加到6毫米时，假设挤出的牙膏长度不变，挤出量会增加44%。</p>
+<p>原先顾客用一管牙膏的时间，现在要1.4管牙膏才能满足需求。看似很小的改变，却刷新了这家公司的销售记录，创造了历史。</p>
+<h2 id="言论"><a href="#言论" class="headerlink" title="言论"></a>言论</h2><p>1、</p>
+<p>一件事最可怕的时刻，总是在你开始做之前。</p>
+<p>– <a target="_blank" rel="noopener" href="https://gretchenrubin.com/2016/08/according-stephen-king-scariest-moment-always-____">斯蒂芬·金</a></p>
+<p>2、</p>
+<p>对于那些没有想象力的人来说，保持常态就是他们的理想。</p>
+<p>– <a target="_blank" rel="noopener" href="https://quotefancy.com/quote/782361/C-G-Jung-Normality-is-a-fine-ideal-for-those-who-have-no-imagination">荣格</a></p>
+<p>3、</p>
+<p>IT 行业与传统制造业有一个重要区别，就是 IT 行业有着严重的垄断。</p>
+<p>全世界的智能手机有70亿部，比汽车多出5倍（14亿辆）。但是，智能手机制造商比汽车制造商少了好几个数量级。搜索引擎、社交网络、操作系统都是这样，几个巨头就垄断了整个市场。</p>
+<p>– <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=28896320">Hacker News 读者</a></p>
+<p>4、</p>
+<p>电动汽车虽然售价高，但是每公里的行驶成本低，因此用得越久越划算。这就要求汽车厂商制造耐用的电动汽车。</p>
+<p>– <a target="_blank" rel="noopener" href="https://news.ycombinator.com/item?id=30914512">Hacker News 读者</a></p>
+<p>5、</p>
+<p>2021年只有两种人在写博客，一种是试图建立受众并从中获利的人，另一种是只想写出想法、而没有任何目标的人。</p>
+<p>这两种人的行为都非常好。选择做你喜欢的事，坚持下去，它们最终都可以对他人产生价值。</p>
+<p>– <a target="_blank" rel="noopener" href="https://bhupesh.me//what-i-have-learned-from-blogging-so-far-retrospect/">《我从博客中学到的东西》</a></p>
+<h2 id="历史上的本周"><a href="#历史上的本周" class="headerlink" title="历史上的本周"></a>历史上的本周</h2><p>2021年（第 162 期）：<a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2021/06/weekly-issue-162.html">生活就像《吃豆人》游戏</a></p>
+<p>2020年（第 111 期）：<a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2020/06/weekly-issue-111.html">智能电视的误区</a></p>
+<p>2019年（第 60 期）：<a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2019/06/weekly-issue-60.html">一本介绍人类起源的学术自传</a></p>
+<p>2018年（第 9 期）：<a target="_blank" rel="noopener" href="https://www.ruanyifeng.com/blog/2018/06/weekly-issue-9.html">身份证可以植入人体</a></p>
+<h2 id="订阅"><a href="#订阅" class="headerlink" title="订阅"></a>订阅</h2><p>这个周刊每周五发布，同步更新在<a target="_blank" rel="noopener" href="http://www.ruanyifeng.com/blog">阮一峰的网络日志</a>和<a target="_blank" rel="noopener" href="http://weixin.sogou.com/weixin?query=%E9%98%AE%E4%B8%80%E5%B3%B0%E7%9A%84%E7%BD%91%E7%BB%9C%E6%97%A5%E5%BF%97">微信公众号</a>。</p>
+<p>微信搜索“阮一峰的网络日志”或者扫描二维码，即可订阅。</p>
+<p><img src="https://cdn.beekka.com/blogimg/asset/202103/bg2021030402.jpg"></p>
+<p>（完）</p>
+
+  </div>
+  
+    
+      <a id="older" class="blog-nav" href="/weekly/2023/01/15/issue-211/">OLDER&nbsp;&gt;</a>
+      
+        
+          <a id="newer" class="blog-nav" href="/weekly/2023/01/15/issue-21/">&lt;&nbsp;NEWER</a>
+          
+            
+</div>
+        <div class="footer">
+  
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/leedom92/hexo-theme-leedom">Copyright © Leedom 2021</a>
+        
+    </div>
+  
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/leedom92/hexo-theme-leedom">Theme by Leedom | Powered by Hexo</a>
+        
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="back-to-top hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/weekly/js/backtotop.js"></script>
+
+
+
+      
+  <div class="search-icon" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-box">
+        <div class="search-title">
+          <!-- <span class="search-icon-input">
+            <a href="javascript: void(0)">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </span> -->
+          
+            <input type="text" class="search-input" id="search-input" placeholder="搜索">
+          
+          <span class="search-close-icon" id="search-close-icon">
+            <a href="javascript: void(0)">
+              <i class="iconfont icon-close"></i>
+            </a>
+          </span>
+        </div>
+        <div class="search-result" id="search-result"></div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    // inputArea.onclick = function() {
+    //   getSearchFile()
+    //   this.onclick = null
+    // }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        inputArea.focus()
+        getSearchFile()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'><span></ul>";
+      // $resultContent.innerHTML = "<ul><span class='local-search-empty'>First search, index file loading, please wait...<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'><h2>" + orig_data_title + "</h2></a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<h3 class=\"search-result-abstract\">" + match_content + "...</h3>"
+                }
+                str += "<hr></li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>No result<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The search.xml file was not found, please refer to：<a href='https://github.com/leedom92/hexo-theme-leedom#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>The request failed, Try to refresh the page or try again later.<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "./search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+    </div>
+  </body>
+</html>
